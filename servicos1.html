@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ND segur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: red;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  img src = "C:\xampp\htdocs\Pap222\imagens\logo-net-empregos.png";
+  background-color: red;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <img src="imagens/logo-net-empregos.jpg" width=150 height=150>
+  <h1>ND SEGUR</h1>
+  <p>Proteção de exelência</p>
+</div>
+
+
+<div class="navbar">
+    <a href="servicos1.html">SERVIÇOS E PRODUTOS<strong></strong></a>
+	<a href="promocoes1.html">PROMOÇÕES<strong></strong></a>
+    <a href="fechaduras1.html">FECHADURAS ELETRÓNICAS<strong></strong></a>
+	<a href="fotos1.html">FOTOGRAFIAS<strong></strong></a>
+	<a href="contactos1.html">CONTACTOS<strong></strong></a>
+	<a href="compras1.html">COMPRAS<strong></strong></a>
+	<a href="http://localhost/Site/PAP/Novapagina.php" style="position:absolute; right:0px" >VOLTAR<strong></strong></a>
+</div>
+
+<div class="row">
+  <div class="side">
+  <center>
+  <table border=0 width=95%>
+  <tr>
+  <td>
+  <h2>Deteção de intrusão</h2>
+Sejam soluções caseiras empresariais ou industrias, temos a configuração ideal de acordo com as suas necessidades.
+  </td>
+ <td> &nbsp;&nbsp;&nbsp;&nbsp;</td> 
+  
+<td>	
+<h2>Deteção de incêndio</h2>
+Sistemas de incêndio de elevada qualidade e certificação de produto e instalação.
+</td>
+</tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td>
+<h2>Controlo de acessos</h2>
+Hoje em dia as empresas procuram soluções de controlo de acessos que facilitem o registo e aumentem a segurança do seu espaço. Temos a resposta adequada ao seu negócio.
+</td>
+<td> &nbsp;</td> 
+ 
+<td>     	
+<h2>Sistemas de CCTV e Videoporteiros</h2>
+Sistemas de videovigilância com inteligência artificial, leitura de matriculas, leitura e controlo de entradas mediante temperatura , controlo de perímetro, etc.
+
+Possibilidade de gestão e visualização remota com inputs para a nossa central recetora.
+
+
+Os videoporteiros deixaram de ser apenas uma ferramenta para abrir portas e visualizar o visitante localmente.
+
+Com a evolução da tecnologia existem agora possibilidades de os mesmos sistemas serem operados remotamente via aplicação móvel, integrar sistemas de cctv, controlo de acessos e até mesmo deteção de intrusão.
+
+Tudo é possivel!!
+</td>
+</tr>
+<td>     	
+<h2>Fechaduras Eletromecânicas</h2>
+As fechaduras Eletromecânicas da Promix são o produto ideal para ligar ao seu controlo de acessos, portas de entrada, videoporteiros e todas as outras situações em que necessite de uma fechadura personalizada elétrica.
+  <br><br><br><br>
+  </table>
+  </center>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 160px;
+   background-color: #DCDCDC;
+   color: black;
+   text-align: center;
+   padding: 1px;
+}
+
+.socials{
+		list-style: none;
+		display: flex;
+		aling-items: center;
+		justify-content: center;
+		margin: 1rem 0 1rem 0;
+	}
+
+
+
+</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="footer">
+  <h2>NDsegur</h2>
+	<p>Proteção de exelência, Serviços e Tecnologias de Segurança - Alvará nº 3 A, B e C</p>
+	<ul class="socials">
+	<li><a href="https://www.instagram.com/ndsegur/"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+<p>Copyright &copy;2023 NDSegur. designed by <span> Afonso Machado and Dinis Duarte</span></p>
+</div>
